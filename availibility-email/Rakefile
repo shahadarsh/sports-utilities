@@ -1,0 +1,6 @@
+require_relative 'send_availibility_email.rb'
+
+desc("Sends availibility email")
+task :send_availibility_email, [:user, :pwd] do |t, args|
+	send_email(args[:user], args[:pwd])
+end
